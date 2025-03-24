@@ -48,8 +48,8 @@ public class AdjacencyGraphTest {
         assertEquals(2, graph.size());
         assertTrue(graph.contains(a));
         assertTrue(graph.contains(b));
-        assertFalse(graph.connected(a, b));
-        assertFalse(graph.connected(b, a));
+        assertFalse(graph.connect(a, b));
+        assertFalse(graph.connect(b, a));
     }
 
     @Test
@@ -68,8 +68,8 @@ public class AdjacencyGraphTest {
         assertEquals(2, graph.size());
         assertTrue(graph.contains(a));
         assertTrue(graph.contains(b));
-        assertTrue(graph.connected(a, b));
-        assertFalse(graph.connected(b, a));
+        assertTrue(graph.connect(a, b));
+        assertFalse(graph.connect(b, a));
     }
 
     @Test
@@ -88,7 +88,7 @@ public class AdjacencyGraphTest {
         assertEquals(2, graph.size());
         assertTrue(graph.contains(a));
         assertTrue(graph.contains(b));
-        assertTrue(graph.connected(a, b));
-        assertTrue(graph.connected(b, a));
+        assertTrue(graph.connect(a, b));
+        assertTrue(graph.connect(b, a));
     }
 }
